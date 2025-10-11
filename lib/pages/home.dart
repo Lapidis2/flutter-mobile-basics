@@ -18,7 +18,9 @@ class HomePage extends StatelessWidget {
           ),
         ),
         centerTitle: true,
-        leading: Container(
+        leading: GestureDetector(
+          onTap:(){},
+          child:Container(
           margin: EdgeInsets.all(20),
           alignment: Alignment.center,
           decoration: BoxDecoration(
@@ -31,8 +33,11 @@ class HomePage extends StatelessWidget {
             width: 20,
           ),
         ),
+        ),
         actions: [
-          Container(
+          GestureDetector(
+            onTap: (){},
+           child:Container(
             width: 30,
             margin: EdgeInsets.all(20),
             alignment: Alignment.center,
@@ -46,6 +51,8 @@ class HomePage extends StatelessWidget {
               width: 5,
             ),
           ),
+          )
+          
         ],
       ),
     );
