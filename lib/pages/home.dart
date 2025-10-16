@@ -167,8 +167,12 @@ class _HomePageState extends State<HomePage> {
 
   Column _dietSection() {
     return Column(
+    crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+   
+
         Padding(
+        
           padding: const EdgeInsets.only(left: 20),
           child: Text(
             'Recommended Diets',
