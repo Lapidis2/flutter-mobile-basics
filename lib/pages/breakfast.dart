@@ -4,14 +4,14 @@ import 'package:projects/models/category_modal.dart';
 import 'package:projects/models/diet_modal.dart';
 import 'package:projects/models/popular_modal.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class Breakfast extends StatefulWidget {
+  const Breakfast({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<Breakfast> createState() => _BreakfastState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _BreakfastState extends State<Breakfast> {
   List<CategoryModal> categories = [];
   List<DietModel> diets = [];
   List<PopularDietsModel> popularDiets = [];
@@ -26,50 +26,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     _getInitialInfo();
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        title: Text(
-          'Break Fast',
-          style: TextStyle(
-            color: const Color.fromARGB(255, 115, 112, 112),
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        centerTitle: true,
-        leading: GestureDetector(
-          onTap: () {},
-          child: Container(
-            margin: EdgeInsets.all(20),
-            alignment: Alignment.center,
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
-            child: SvgPicture.asset(
-              'assets/icons/Arrow.svg',
-              height: 20,
-              width: 20,
-            ),
-          ),
-        ),
-        actions: [
-          GestureDetector(
-            onTap: () {},
-            child: Container(
-              width: 30,
-              margin: EdgeInsets.all(20),
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: SvgPicture.asset(
-                'assets/icons/dots.svg',
-                height: 5,
-                width: 5,
-              ),
-            ),
-          ),
-        ],
-      ),
+      
       body: ListView(
         children: [
           _searchField(),
@@ -82,6 +39,7 @@ class _HomePageState extends State<HomePage> {
       
         ],
       ),
+    
     );
   }
 
