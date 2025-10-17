@@ -32,19 +32,18 @@ class HomePage extends StatelessWidget {
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16, color: Colors.grey),
             ),
-       SizedBox(height:60),
+            SizedBox(height: 60),
             Padding(
               padding: EdgeInsets.only(bottom: 30),
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.orange,
-                  padding: EdgeInsets.symmetric(horizontal: 60,vertical: 15),
+                  padding: EdgeInsets.symmetric(horizontal: 60, vertical: 15),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30)
-                  )
+                    borderRadius: BorderRadius.circular(30),
+                  ),
                 ),
                 onPressed: () {
-                
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(builder: (context) => MainPage()),

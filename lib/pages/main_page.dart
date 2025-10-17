@@ -12,7 +12,7 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
    int _selecetedPageIndex = 0;
-  final List<Widget> _pages = const [Breakfast(), SettingPage(), ProfilePage()];
+  final List<Widget> _pages = const [Breakfast(), ProfilePage(), SettingPage()];
   void _onTape(int index) {
     setState(() {
       _selecetedPageIndex = index;
