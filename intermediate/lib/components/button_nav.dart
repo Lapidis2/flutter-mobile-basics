@@ -14,7 +14,7 @@ class ButtonNav extends StatelessWidget {
       child: GNav(
         activeColor: Colors.grey,
         mainAxisAlignment: MainAxisAlignment.center,
-        onTabChange:(value)=>onTabChange!(value),
+        onTabChange:onTabChange,
         tabs: [
           GButton(icon: Icons.home, text: 'Home'),
           GButton(icon: Icons.shopping_bag_rounded, text: 'Cart'),
